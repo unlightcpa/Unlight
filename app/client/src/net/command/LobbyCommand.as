@@ -559,7 +559,7 @@ package net.command
      public function csGetNoticeSelectableItem(args:String):ByteArray
      {
         var cmd:ByteArray = new ByteArray();
-            cmd.writeShort(52);
+            cmd.writeShort(51);
             cmd.writeUTF(args);
 
             return cmd;
@@ -568,7 +568,7 @@ package net.command
      public function csProfoundNoticeClear(num:int):ByteArray
      {
         var cmd:ByteArray = new ByteArray();
-            cmd.writeShort(53);
+            cmd.writeShort(52);
             cmd.writeInt(num);
 
             return cmd;
@@ -577,7 +577,7 @@ package net.command
      public function csInventoryUpdateCheck():ByteArray
      {
         var cmd:ByteArray = new ByteArray();
-            cmd.writeShort(54);
+            cmd.writeShort(53);
 
             return cmd;
         }
@@ -585,7 +585,7 @@ package net.command
      public function csDeckMaxCheck():ByteArray
      {
         var cmd:ByteArray = new ByteArray();
-            cmd.writeShort(55);
+            cmd.writeShort(54);
 
             return cmd;
         }
